@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northeast India Arts & Crafts</title>
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="public/images/zirocraft-logo.jpg" alt="ZiroCraft Logo" class="logo">
+                <h1>Explore Northeast India's Traditional Arts & Crafts</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="public/pages/products.html"><i class="fas fa-box"></i> Products</a></li>
+                    <li><a href="public/pages/artisans.html"><i class="fas fa-users"></i> Artisans</a></li>
+                    <li><a href="public/pages/cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                    <li id="user-profile-container" class="user-profile" style="display: none;">
+                        <span class="user-name" id="user-name"></span>
+                        <div class="profile-icon" id="profile-icon"></div>
+                        <div class="profile-dropdown" id="profile-dropdown">
+                            <a href="public/pages/profile.html" class="profile-dropdown-item">My Profile</a>
+                            <a href="public/pages/cart.html" class="profile-dropdown-item">My Orders</a>
+                            <a href="#" class="profile-dropdown-item logout-btn" id="logout-btn">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bringing the Art of Northeast India to the World</h2>
+            <p>Discover handcrafted treasures by skilled artisans, preserving cultural heritage and supporting local communities.</p>
+            <a href="public/pages/products.html" class="btn">Shop Now</a>
+        </div>  
+    </section>
+
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="login()">Login</button>
+        <a href="public/pages/signup.html" class="signup-link">Don't have an account? Sign Up</a>
+    </div>
+
+    <section class="quiz-section">
+        <h2>Take the Quiz and Learn More!</h2>
+        <div id="quiz-container">
+            <p id="question"></p>
+            <div id="options"></div>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="public/pages/about.html" target="_blank">About Us</a></li>
+                <li><a href="public/pages/contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="public/pages/terms.html" target="_blank">Terms of Service</a></li>
+                <li><a href="public/pages/privacy.html" target="_blank">Privacy Policy</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw23aG_0AnGE6CZklvJjR6CEt_P4rI8PzPC2a6qoTyAQBvsvQXUMyoYwz80_E5_3_Mho&usqp=CAU" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram"></a>
+                <a href="https://x.com" aria-label="Twitter"><img src="https://i.pinimg.com/736x/dc/14/bf/dc14bf8657854c461a858844f8d04009.jpg" alt="Twitter"></a>
+            </div>
+            <p class="copyright">&copy; zirocraft.com</p>
+            <p class="copyright">&copy; 2025 Northeast India Arts & Crafts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="public/js/index.js"></script>
+</body>
+</html>
